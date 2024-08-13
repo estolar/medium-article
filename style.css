@@ -1,0 +1,98 @@
+/* Fonts and colors */
+body {
+  color: #0055A4;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: lighter;
+  font-family: 'Lora', serif;
+  margin: 0;
+}
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+h2 {
+  color: #0055A4;
+  font-weight: bold;
+  text-shadow: 10px 0px 10px red;
+}
+a {
+  text-decoration: none;
+  color: #0055A4;
+}
+
+/* Custom design  */
+.banner {
+  background-image: url("https://loremflickr.com/1000/500/paris");
+  background-size: cover;
+  color: white;
+  padding: 120px 0;
+}
+.banner h1 {
+  font-size: 38px;
+}
+.banner p {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: lighter;
+  opacity: 0.8;
+  text-shadow: 20px 0px 7px red;
+}
+.container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  border-left: 1px solid blue;
+  border-right: 1px solid blue;
+  text-align: center;
+}
+.container h1 {
+  color: #0055A4;
+  font-size: 77px;
+  text-shadow: 20px 0px 7px red;
+}
+.link-medium {
+  background-image: linear-gradient(to bottom,#EF4135, #FFF, #0055A4); /* Azul de la bandera francesa */
+  color: #636363;
+  font-weight: lighter;
+  font-size: 25px;
+  font-style: italic;
+  display: block; /* Asegura que el enlace se comporte como un bloque */
+  width: 300px; /* Ancho fijo de 300px */
+  margin: 0 auto; /* Centra el enlace horizontalmente */
+  text-align: center; /* Centra el texto dentro del enlace */
+}
+
+.link-medium:hover {
+  background-image: linear-gradient(to bottom, #0055A4, #FFF, #EF4135);
+  color: white; /* Ajusta el color del texto si es necesario para que sea legible */
+}
+
+/* Media queries */
+@media(max-width: 900px) {
+  .container {
+    width: 700px;
+  }
+}
+@media(max-width: 750px) {
+  .container {
+    width: 450px;
+  }
+}
+@media(max-width: 500px) {
+  .container {
+    width: 350px;
+  }
+  .banner {
+    padding: 50px 0;
+  }
+  .banner h1 {
+    font-size: 30px;
+  }
+  .banner p {
+    font-size: 20px;
+  }
+}
